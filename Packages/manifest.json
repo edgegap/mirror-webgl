@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.edgegap.unity-servers-plugin": "https://github.com/edgegap/edgegap-unity-plugin.git#sample/unity-mirror-tank-webgl",
     "com.unity.collab-proxy": "2.0.5",
     "com.unity.feature.development": "1.0.1",
     "com.unity.nuget.newtonsoft-json": "3.2.1",

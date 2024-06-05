@@ -1,5 +1,16 @@
 {
   "dependencies": {
+    "com.edgegap.unity-servers-plugin": {
+      "version": "https://github.com/edgegap/edgegap-unity-plugin.git#sample/unity-mirror-tank-webgl",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1",
+        "com.unity.toolchain.win-x86_64-linux-x86_64": "2.0.6",
+        "com.unity.modules.uielements": "1.0.0"
+      },
+      "hash": "dee6d1f1cb3ee75e2ee9dccd5489533d2ac3e6fb"
+    },
     "com.unity.collab-proxy": {
       "version": "2.0.5",
       "depth": 0,
