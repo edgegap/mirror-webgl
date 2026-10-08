@@ -1,0 +1,23 @@
+{
+    "name": "Edgegap.Tanks.Matchmaking",
+    "rootNamespace": "",
+    "references": [
+        "Mirror",
+        "Edgegap.SDK"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.edgegap.unity-sdk",
+            "expression": "3.5.5",
+            "define": "EDGEGAP_SDK"
+        }
+    ],
+    "noEngineReferences": false
+}
