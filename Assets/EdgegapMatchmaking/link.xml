@@ -1,0 +1,10 @@
+<!-- Optional Edgegap matchmaking: keep the SDK DTOs intact under IL2CPP managed code stripping
+     (WebGL / Linux server). Newtonsoft.Json creates them via reflection, so the linker can't
+     see they're used. ignoreIfMissing keeps builds working when the SDK isn't installed. -->
+<linker>
+  <assembly fullname="Edgegap.SDK" preserve="all" ignoreIfMissing="1" />
+  <assembly fullname="Edgegap.Tanks.Matchmaking" ignoreIfMissing="1">
+    <type fullname="TanksTicketAttributes" preserve="all" />
+    <type fullname="TanksGroupUpRequestDTO" preserve="all" />
+  </assembly>
+</linker>
