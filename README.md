@@ -43,7 +43,7 @@ Everything lives in `Assets/EdgegapMatchmaking`:
 
 ### Enable it
 
-1. **Install the Edgegap Unity SDK.** In Package Manager, choose **Add package from git URL** and enter `https://github.com/edgegap/edgegap-unity-sdk.git#3.5.5`. Or add `"com.edgegap.unity-sdk": "https://github.com/edgegap/edgegap-unity-sdk.git#3.5.5"` to `Packages/manifest.json`.
+1. **Install the Edgegap Unity SDK.** In Package Manager, choose **Add package from git URL** and enter `https://github.com/edgegap/edgegap-unity-sdk.git#main`. Or add `"com.edgegap.unity-sdk": "https://github.com/edgegap/edgegap-unity-sdk.git#main"` to `Packages/manifest.json`. Tracking `main` keeps the sample on the latest SDK release. Unity records the resolved commit in `Packages/packages-lock.json`; to pick up a newer SDK later, delete the `com.edgegap.unity-sdk` entry there (or remove and re-add the package). To freeze a version, use a tag such as `#3.5.5` instead.
 2. **Activate the object.** Open the `MirrorTanks` scene, select `EdgegapMatchmaking` and tick the checkbox next to its name.
 3. **Upload the server.** Build and upload it as in the tutorial above, with the `gameport` port (`7778`, `WS`, TLS Upgrade enabled). Build it after step 2, so the server includes `TanksMatchmakingServer` and stops its deployment when the match is over.
 4. **Create a matchmaker** in the [dashboard](https://app.edgegap.com/matchmaker-management-v2/matchmakers/list) from `matchmaker-config.json`:
